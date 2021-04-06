@@ -4,7 +4,6 @@ import { createStructuredSelector } from 'reselect';
 
 import { toggleCartHidden } from '../../redux/cart/cart.actions.js';
 
-// import './cart-icon.styles.scss';
 import { selectCartItemsCount } from '../../redux/cart/cart.selectors.js';
 
 import {

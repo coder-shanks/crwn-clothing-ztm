@@ -8,7 +8,6 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
 import { auth } from '../../firebase/firebase.utils.js';
 
-// import './header.styles.scss';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
