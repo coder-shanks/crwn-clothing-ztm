@@ -1,6 +1,6 @@
 import { takeLatest, put, call, all } from 'redux-saga/effects';
 
-import { UserActionTypes } from './user.types';
+import UserActionTypes from './user.types';
 
 import {
   auth,
