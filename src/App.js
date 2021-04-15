@@ -17,10 +17,14 @@ import { checkUserSession } from './redux/user/user.actions';
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
-  onComponentDidMount() {
+  componentDidMount() {
     const { checkUserSession } = this.props;
 
     checkUserSession();
+  }
+
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
   }
 
   render() {
@@ -53,7 +57,7 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  checkUserSession: dispatch(checkUserSession()),
+  checkUserSession: () => dispatch(checkUserSession()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
