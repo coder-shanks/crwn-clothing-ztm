@@ -9,7 +9,7 @@ import SignInAndSignUpPage from './pages/signin-and-signup/signin-and-signup.com
 import CheckoutPage from './pages/checkout/checkout.component';
 
 import Header from './components/header/header.component';
-import './App.css';
+import './App.scss';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
